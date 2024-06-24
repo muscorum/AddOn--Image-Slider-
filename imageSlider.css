@@ -2,11 +2,12 @@
 :root {
     --bg-body: #15191f;
     --bg-container: #1f242d;
+    --bg-content: #15191fcc;
     --bs-container: #1b1b1b;
     --bs-item: #575757;
     --tx-color: #eee;
     --br-color: #5f5a5ab6;
-
+    --tx-name: #eee;
 }
 
 * {
@@ -84,6 +85,8 @@ body {
     width: 300px;
     text-align: left;
     color: var(--tx-color);
+    background: var(--bg-content);
+    border-radius: 15px;
     transform: translate(0, -50%);
     font-family: system-ui, sans-serif;
     display: none;
@@ -95,6 +98,7 @@ body {
 
 .content .name {
     font-size: 40px;
+    color: var(--tx-name);
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -132,6 +136,21 @@ body {
 
 
 /* BUTTON */
+.buttonContent {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.buttonContentdesign {
+    border-radius: 15px;
+}
+
+.buttonContentdesign:hover {
+    background: var(--br-color);
+    color: var(--tx-color);
+}
+
 .button {
     width: 100%;
     text-align: center;
